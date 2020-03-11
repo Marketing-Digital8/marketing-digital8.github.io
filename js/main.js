@@ -6,10 +6,10 @@
 (function($) {
 
     "use strict";
-    
+
     var cfg = {
         scrollDuration : 800, // smoothscroll duration
-        mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
+        mailChimpURL   : 'https://digital8.us19.list-manage.com/subscribe/post?u=15304cd3d7850e6ddfd27bec1&amp;id=1900ec1d12'   // mailchimp url
     },
 
     $WIN = $(window);
@@ -29,7 +29,7 @@
    /* Preloader
     * -------------------------------------------------- */
     var clPreloader = function() {
-        
+
         $("html").addClass('cl-preload');
 
         $WIN.on('load', function() {
@@ -37,16 +37,16 @@
             //force page scroll position to top at page refresh
             $('html, body').animate({ scrollTop: 0 }, 'normal');
 
-            // will first fade out the loading animation 
+            // will first fade out the loading animation
             $("#loader").fadeOut("slow", function() {
                 // will fade out the whole DIV that covers the website.
                 $("#preloader").delay(300).fadeOut("slow");
-            }); 
-            
-            // for hero content animations 
+            });
+
+            // for hero content animations
             $("html").removeClass('cl-preload');
             $("html").addClass('cl-loaded');
-        
+
         });
     };
 
@@ -94,7 +94,7 @@
 
 
     /* Mobile Menu
-     * ---------------------------------------------------- */ 
+     * ---------------------------------------------------- */
     var clMobileMenu = function() {
 
         var toggleButton = $('.header-menu-toggle'),
@@ -118,7 +118,7 @@
 
             if (nav.hasClass('mobile')) {
                 toggleButton.toggleClass('is-clicked');
-                nav.slideToggle(); 
+                nav.slideToggle();
             }
         });
 
@@ -152,7 +152,7 @@
             offset: '25%'
 
         });
-        
+
     };
 
 
@@ -176,7 +176,7 @@
                 $size = $thumbLink.data('size').split('x'),
                 $width  = $size[0],
                 $height = $size[1];
-        
+
             var item = {
                 src  : $href,
                 w    : $width,
@@ -212,7 +212,7 @@
    /* Stat Counter
     * ------------------------------------------------------ */
     var clStatCount = function() {
-        
+
         var statSection = $(".s-stats"),
             stats = $(".item-stats__count");
 
@@ -234,7 +234,7 @@
                         });
                     });
 
-                } 
+                }
 
                 // trigger once only
                 this.destroy();
@@ -250,7 +250,7 @@
     /* slick slider
      * ------------------------------------------------------ */
     var clSlickSlider = function() {
-        
+
         $('.testimonials__slider').slick({
             arrows: false,
             dots: true,
@@ -275,11 +275,11 @@
    /* Smooth Scrolling
     * ------------------------------------------------------ */
     var clSmoothScroll = function() {
-        
+
         $('.smoothscroll').on('click', function (e) {
             var target = this.hash,
             $target    = $(target);
-            
+
                 e.preventDefault();
                 e.stopPropagation();
 
@@ -302,7 +302,7 @@
    /* Placeholder Plugin Settings
     * ------------------------------------------------------ */
     var clPlaceholder = function() {
-        $('input, textarea, select').placeholder();  
+        $('input, textarea, select').placeholder();
     };
 
 
@@ -312,7 +312,7 @@
 
         $('.alert-box').on('click', '.alert-box__close', function() {
             $(this).parent().fadeOut(500);
-        }); 
+        });
 
     };
 
@@ -320,7 +320,7 @@
    /* Animate On Scroll
     * ------------------------------------------------------ */
     var clAOS = function() {
-        
+
         AOS.init( {
             offset: 200,
             duration: 600,
@@ -336,7 +336,7 @@
    /* AjaxChimp
     * ------------------------------------------------------ */
     var clAjaxChimp = function() {
-        
+
         $('#mc-form').ajaxChimp({
             language: 'es',
             url: cfg.mailChimpURL
@@ -361,7 +361,7 @@
             3: '<i class="fas fa-exclamation-circle"></i> E-mail address is not valid.',
             4: '<i class="fas fa-exclamation-circle"></i> E-mail address is not valid.',
             5: '<i class="fas fa-exclamation-circle"></i> E-mail address is not valid.'
-        } 
+        }
 
     };
 
@@ -388,5 +388,5 @@
         });
 
     })();
-        
+
 })(jQuery);
