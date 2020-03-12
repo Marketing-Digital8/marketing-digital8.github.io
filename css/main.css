@@ -1614,7 +1614,7 @@ input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- */
 .s-header {
-  width: 100%;
+  width: 100vw;
   height: 72px;
   background-color: transparent;
   position: absolute;
@@ -1695,8 +1695,8 @@ input::-moz-focus-inner {
 }
 
 .header-logo img {
-  width: 130px;
-  height: 37px;
+  width: 180px;
+  height: 110px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1867,8 +1867,9 @@ input::-moz-focus-inner {
   }
 
   .header-logo img {
-    width: 120px;
-    height: 34px;
+    width: 140px;
+    height: 80px;
+    margin-top: 7px;
   }
 
   .s-header.sticky .header-logo {
