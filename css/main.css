@@ -2656,6 +2656,7 @@ html.no-csstransitions .home-content__main {
  .s-prices {
    padding-top: 5px;
    background-color: #fff;
+   padding-top:100px;
  }
  .s-prices .price-call {
    background-color: #F26522;
@@ -2684,6 +2685,10 @@ html.no-csstransitions .home-content__main {
    background: white;
    border: 1px #F26522 dashed;
  }
+
+  .s-prices .item-process__header ul {
+    padding: 50px;
+  }
 
  .s-prices .item-process__header a {
    border-radius:
