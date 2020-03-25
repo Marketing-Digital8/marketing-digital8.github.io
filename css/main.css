@@ -2674,7 +2674,7 @@ html.no-csstransitions .home-content__main {
  }
 
  .s-prices .prices-wrap {
-   padding: 25px;
+   padding: 100px;
  }
 
  .s-prices .item-process {
@@ -2712,7 +2712,7 @@ html.no-csstransitions .home-content__main {
 /* desktop size*/
 @media only screen and (max-width:1200px) {
   .s-prices .prices-wrap {
-   padding: 100px;
+   padding: 25px;
  }
 }
 
