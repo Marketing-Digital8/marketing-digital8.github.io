@@ -2614,9 +2614,6 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:800px) {
-  .s-prices .prices-wrap {
-      padding: 25px;
-  }
   
   .about-process {
     margin-top: 6rem;
@@ -2677,7 +2674,7 @@ html.no-csstransitions .home-content__main {
  }
 
  .s-prices .prices-wrap {
-   padding: 100px;
+   padding: 25px;
  }
 
  .s-prices .item-process {
@@ -2703,6 +2700,21 @@ html.no-csstransitions .home-content__main {
    text-align: left;
    padding-left: 60px;
  }
+
+/* Prices responsive */
+/* tablet size*/
+@media only screen and (max-width:600px) {
+  .s-prices .prices-wrap {
+   padding: 50x;
+ }
+}
+
+/* desktop size*/
+@media only screen and (max-width:1200px) {
+  .s-prices .prices-wrap {
+   padding: 100px;
+ }
+}
 
 
 /* ===================================================================
