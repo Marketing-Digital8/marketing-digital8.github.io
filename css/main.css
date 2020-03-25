@@ -2676,17 +2676,12 @@ html.no-csstransitions .home-content__main {
    padding: 100px;
  }
 
-@media only screen and (max-width:600px) {
-  .s-prices .prices-wrap {
-   padding: 25px;
- }
-}
  .s-prices .prices-wrap {
    padding: 100px;
  }
 
  .s-prices .item-process {
-   padding: 0;
+   padding: 0px;
  }
 
  .s-prices .item-process__header {
