@@ -2676,7 +2676,7 @@ html.no-csstransitions .home-content__main {
    padding: 100px;
  }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:600px) {
   .s-prices .prices-wrap {
    padding: 25px;
  }
