@@ -2676,6 +2676,11 @@ html.no-csstransitions .home-content__main {
    padding: 100px;
  }
 
+@media only screen and (max-width:800px) {
+  .s-prices .prices-wrap {
+   padding: 25px;
+ }
+}
  .s-prices .prices-wrap {
    padding: 100px;
  }
